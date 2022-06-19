@@ -17,7 +17,7 @@ public class lesson3Test {
         given()
                 .when()
                 .get("https://api.spoonacular.com/recipes/716429/information?" +
-                        "includeNutrition=false&apiKey=" +apiKey)
+                        "apiKey" +apiKey)
                 .then()
                 .statusCode(200);
     }
